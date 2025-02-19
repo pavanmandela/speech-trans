@@ -3,12 +3,12 @@ import speech_recognition as spr
 from googletrans import Translator
 from gtts import gTTS
 from flask_cors import CORS
-CORS(app)
 import os
 import traceback
 import glob
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
+CORS(app)
 
 # Map of supported languages
 language_map = {
