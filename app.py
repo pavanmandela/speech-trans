@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify, render_template
 import speech_recognition as spr
 from googletrans import Translator
 from gtts import gTTS
+from flask_cors import CORS
+CORS(app)
 import os
 import traceback
 import glob
